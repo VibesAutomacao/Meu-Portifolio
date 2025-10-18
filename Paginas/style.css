@@ -1,0 +1,105 @@
+ *{
+            box-sizing: border-box;
+          }
+           
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                background: linear-gradient(to left,rgb(41, 40, 40),black);
+            }
+
+            h1, h2, h3,p,b{
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            .Home{
+                padding: 10px;text-align: center; 
+                color: white;
+                font-size: 30px;
+            }
+
+            .menu{
+                background-color: rgb(255, 253, 253);
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .menu a{
+
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+
+                }
+                #topo{
+                    padding: 100px; 
+                    text-align: center; 
+                    background-color: black;
+                    color: white; 
+                    font-size: 30px;
+                }
+                .conteudo{
+                    padding: 50px 0px;
+                    font-size: 16px;
+                    width: 900px;
+                    margin: auto;
+                }
+                .divisor{
+                    border-top: 3px solid #bbb; 
+                    border-radius: 5px;
+                }
+
+                .col12 {
+                    background: linear-gradient(to left black, rgb(43, 41, 41));
+                    text-align: center;
+                    padding: 10px;;
+                }
+                .col12 img{
+                    display: inline-block;
+                    color: #000;
+                }
+
+                .col8 {
+                    font-size: 40%;
+            
+                }
+                .Endereço {
+                    text-align: center;
+                }
+                
+                .Quem-Somos {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .tudo-sobre{
+                 padding-left: auto;
+                 display: block;
+                 text-align: center;
+                 align-items: center;
+                }
+
+                .tudo-sobre .Quem-Somos{
+                    margin: 60px;
+                    padding: 50px;
+                }
+            
+
+                h2,h3,h4 
+                {   
+                    margin: 15px ;
+                    padding: 25px;
+                }
+
+                footer {
+                    text-align: center;
+                    border: 0px ;
+                    padding: 50px 0;
+                    color: tomato;
+                }
+                
