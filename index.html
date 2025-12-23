@@ -8,8 +8,26 @@
   
   <link rel="stylesheet" href="portifolio.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Canvas de neve (discreto, não intrusivo) */
+    #snow-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* não bloqueia cliques */
+      z-index: 9999;
+      opacity: 0.55;
+    }
+    @media (max-width: 600px) {
+      #snow-canvas { opacity: 0.45; }
+    }
+  </style>
 </head>
 <body>
+
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
 
 
 <div class="music-player">
@@ -59,21 +77,22 @@ Estou aprendendo <strong>HTML, CSS e Java</strong> e explorando o mundo das <str
     <div class="projetos">
       <h1>Meus Projetos</h1>
       <p>Aqui estão alguns dos meus trabalhos e experiências com código e internet.</p>
+      <p>Projetos que refletem minhas habilidades e criatividade.</p>
       <br>
       <br>
       <ul>
         <li>
-          <h3>Projeto 1 (EM RECONSTRUÇÃO)</h3>
-          <p>EM RECONTRUÇÃO</p>
-          <div class="proj2"><a href="Link do Projeto 1">Manuntenção</a></div>
+          <h3>DROPLOJA</h3>
+          <p>A plataforma de dropshipping que facilita a venda de produtos online.</p>
+          <div class="proj2"><a href="https://vibesautomacao.github.io/BoaCompra/">Ver Projeto 1</a></div>
         </li>
         <br>
         <br>
         <br>
         <li>
-          <h3>LOJA OLGA (PRIMEIRO SITE )</h3>
-          <p>Meu primeiro site — veja minha evolução.</p>
-          <p>Esse site fiz com minha Sabedoria de HTML e CSS</p>
+          <h3>LOJA OLGA</h3>
+          <p>Loja de roupas femininas e masculinas.</p>
+          <p> Com sistemas de login com preferencia do usuário/cliente</p>
           <br>
           <div class="proj1"><a href="https://vibesautomacao.github.io/meu-site1/">Ver Projeto 2</a></div>
         </li>
@@ -115,16 +134,13 @@ Estou aprendendo <strong>HTML, CSS e Java</strong> e explorando o mundo das <str
  
 
 
-  <h3>Você gosta de jogos?</h3>
-  <ul class="jgs">
-    <li><a href="Jogos.html">Sim</a></li>
-    <li><a href="Jogos2.html">Não</a></li>
-  </ul>
+  
 
   
 
   <footer>Todos os direitos reservados ao criador © 2025</footer>
 
+  <script src="snow.js"></script>
   <script src="efeitos.js"></script>
 </body>
     <script>
