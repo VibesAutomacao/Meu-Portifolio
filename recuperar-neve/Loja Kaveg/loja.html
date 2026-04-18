@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KaveG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hotbar">
+    <div class="container hotbar-inner">
+      <a class="logo" href="index.html">KVEG</a>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="loja.html">Loja</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html" class="btn-login">Login</a>
+      </nav>
+      <div class="actions">
+        <button id="cartBtn3" class="cart-btn">🛒 <span id="cartCount3">0</span></button>
+        <button id="menuToggle3" class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Loja</h1>
+      <p>Produtos e serviços disponíveis para compra imediata.</p>
+    </section>
+
+    <section class="products-grid" id="products">
+      <!-- Quatro caixas padrão para produto: imagem, descrição e preço -->
+      <article class="product-card" data-id="p1">
+        <div class="product-media" aria-hidden="true">
+          <!-- espaço para imagem (substituir por <img> quando tiver asset) -->
+          <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="80" rx="8" fill="#f3f6ff"/></svg>
+        </div>
+        <h3>Pacote Inicial</h3>
+        <p class="muted">Kit com serviços básicos para iniciar o seu projeto.</p>
+        <div class="price">R$ 499,00</div>
+        <button class="btn buy-btn" data-id="p1">Comprar</button>
+      </article>
+
+      <article class="product-card" data-id="p2">
+        <div class="product-media" aria-hidden="true">
+          <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><circle cx="60" cy="40" r="24" fill="#fff" stroke="#e6eaf2"/></svg>
+        </div>
+        <h3>Design Premium</h3>
+        <p class="muted">Projeto visual completo para sua marca e materiais.</p>
+        <div class="price">R$ 1.299,00</div>
+        <button class="btn buy-btn" data-id="p2">Comprar</button>
+      </article>
+
+      <article class="product-card" data-id="p3">
+        <div class="product-media" aria-hidden="true">
+          <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="90" height="44" rx="6" fill="#fff" stroke="#e6eaf2"/></svg>
+        </div>
+        <h3>Implantação Pro</h3>
+        <p class="muted">Executamos e acompanhamos a implantação do projeto.</p>
+        <div class="price">R$ 2.499,00</div>
+        <button class="btn buy-btn" data-id="p3">Comprar</button>
+      </article>
+
+      <article class="product-card" data-id="p4">
+        <div class="product-media" aria-hidden="true">
+          <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="80" rx="8" fill="#f3f6ff"/></svg>
+        </div>
+        <h3>Suporte Mensal</h3>
+        <p class="muted">Assinatura para suporte e melhorias contínuas.</p>
+        <div class="price">R$ 199,00 / mês</div>
+        <button class="btn buy-btn" data-id="p4">Comprar</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>KVEG</strong>
+        <p>© 2025 KVEG — Todos os direitos reservados</p>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:suporte@kveg.com" target="_blank" rel="noopener">suporte@kveg.com</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

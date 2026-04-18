@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Registro de Ações — GTA RP</title>
+    <meta name="description" content="Registros de ações para GTA RP (Data, Nomes, Ação, Situação)">
+    <link rel="stylesheet" href="registros.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#">Metropole RP — Registros</a>
+        <nav class="topnav">
+          <a href="#registro">Registrar Ação</a>
+          <a href="#lista">Lista</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main">
+      <section id="registro" class="card form-card">
+        <h1>Registrar Ação</h1>
+        <form id="registroForm" autocomplete="off">
+          <div class="row">
+            <label>Data da Ação
+              <input type="date" id="data" required>
+            </label>
+            <label>Nomes (separe por vírgula)
+              <input type="text" id="nomes" placeholder="Ex: Fulano, Beltrano" required>
+            </label>
+          </div>
+
+          <label>Qual Ação
+            <input type="text" id="acao" placeholder="Ex: Assalto ao banco / Cerco" required>
+          </label>
+
+          <label>Situação
+            <select id="situacao" required>
+              <option value="VITÓRIA">Vitória</option>
+              <option value="DERROTA">Derrota</option>
+            </select>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Salvar Registro</button>
+            <button type="button" id="limparForm" class="btn ghost">Limpar</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="lista" class="card list-card">
+        <div class="list-header">
+          <h2>Registros</h2>
+          <div class="tools">
+            <button id="exportCsv" class="btn">Exportar CSV</button>
+            <button id="clearAll" class="btn danger">Limpar Tudo</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table id="registrosTable">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Nomes</th>
+                <th>Ação</th>
+                <th>Situação</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- registros dinamicos -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div> © 2025 — Registro de Ações GTA RP</div>
+        <div class="muted">Dados salvos no navegador (localStorage)</div>
+      </div>
+    </footer>
+
+    <script src="registros.js" defer></script>
+  </body>
+</html>

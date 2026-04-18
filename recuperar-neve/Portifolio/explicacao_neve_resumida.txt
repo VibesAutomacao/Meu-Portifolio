@@ -1,0 +1,28 @@
+O que foi feito (bem simples, pra quem tem 10 anos):
+
+1) Uma "neve" caiu sobre o site
+- Coloquei um pedaço invisível chamado "canvas" que cobre a tela inteira.
+- Esse canvas desenha muitos pontinhos brancos que descem devagar, parecendo neve.
+- A neve é pequena, lenta e clarinha para não atrapalhar a leitura do site.
+
+2) O Papai Noel passa de vez em quando
+- Criei um bonequinho 🎅 que voa de um lado ao outro da tela.
+- Ele aparece a cada 40 segundos (o primeiro aparece depois de 5 segundos).
+
+3) Não bloqueia os cliques
+- O efeito não impede que você clique nos botões ou links (usei "pointer-events: none").
+
+4) Onde está o código
+- Arquivo novo: "snow.js" (contém a neve e o Papai Noel).
+- No arquivo "index.html": adicionei um <canvas id="snow-canvas"> e um estilo pequeno para o visual.
+
+5) Como testar rápido
+- Abra o arquivo "index.html" no navegador.
+- A neve já deve aparecer. Espere ~5s para ver o Papai Noel.
+
+6) O que dá para mudar fácil
+- Se quiser mais/menos neve: mude a quantidade no começo de "snow.js" (variável que calcula quantos flocos).
+- Se quiser o Papai Noel mais frequente: mude o número 40000 (milissegundos) para um número menor.
+- Se quiser a neve ainda mais discreta: reduza a "opacity" do #snow-canvas no CSS.
+
+Pronto! Se quiser, eu troco o emoji por uma imagem do Papai Noel ou deixo a neve ainda mais sutil.

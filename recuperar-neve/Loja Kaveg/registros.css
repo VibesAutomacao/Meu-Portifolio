@@ -1,0 +1,60 @@
+/* registros.css - estilos inspirados em cores escuras/gradient, layout responsivo */
+:root{
+  --bg:#07070b;
+  --card:#0f1724;
+  --muted:#9aa4b2;
+  --text:#e6eef8;
+  --accent-1:#7c3aed; /* roxo */
+  --accent-2:#06b6d4; /* azul-ciano */
+  --danger:#ef4444;
+  --radius:12px;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#0b1220);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width);margin:0 auto;padding:20px}
+
+/* Topbar */
+.topbar{position:sticky;top:0;background:linear-gradient(90deg,rgba(124,58,237,0.12),rgba(6,182,212,0.06));backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.brand{font-weight:700;color:var(--text);text-decoration:none}
+.topnav a{color:var(--muted);text-decoration:none;margin-left:12px}
+.topnav a:hover{color:var(--text)}
+
+.main{padding:28px 20px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.015));border-radius:var(--radius);padding:18px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.03)}
+.form-card h1{margin:0 0 12px}
+.row{display:flex;gap:12px}
+label{display:block;font-size:0.95rem;color:var(--muted);margin-bottom:8px}
+input[type="text"], input[type="date"], select{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.form-actions{display:flex;gap:10px;margin-top:12px}
+
+.btn{padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,var(--accent-1),var(--accent-2));border:0;color:#fff}
+.btn.ghost{background:transparent}
+.btn.danger{background:transparent;border:1px solid rgba(239,68,68,0.12);color:var(--danger)}
+
+.list-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:0.95rem}
+th,td{padding:10px 8px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03)}
+th{color:var(--muted);font-weight:600}
+td small{color:var(--muted)}
+.muted{color:var(--muted)}
+
+.tag-vitoria{background:rgba(16,185,129,0.12);color:#10b981;padding:6px 8px;border-radius:8px;font-weight:700}
+.tag-derrota{background:rgba(239,68,68,0.08);color:var(--danger);padding:6px 8px;border-radius:8px;font-weight:700}
+
+@media (max-width:800px){
+  .row{flex-direction:column}
+  th,td{font-size:0.9rem}
+}
+
+/* Pequenas sombras/efeitos */
+.card{box-shadow: 0 8px 30px rgba(2,6,23,0.6)}
+
+/* link/focus */
+a{color:inherit}
+a:focus{outline:2px solid rgba(124,58,237,0.22);outline-offset:2px}
+
+.tools button{margin-left:8px}

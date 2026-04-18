@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KVEG — Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hotbar">
+    <div class="container hotbar-inner">
+      <a class="logo" href="index.html">KVEG</a>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="loja.html">Loja</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html" class="btn-login">Login</a>
+      </nav>
+      <div class="actions">
+        <button id="cartBtn4" class="cart-btn">🛒 <span id="cartCount4">0</span></button>
+        <button id="menuToggle4" class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Contato</h1>
+      <p>Fale conosco para orçamentos, dúvidas ou suporte.</p>
+    </section>
+
+    <section id="orcamento" class="contact-section">
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>Nome<input type="text" name="nome" id="nome" required></label>
+        <label>Email<input type="email" name="email" id="email" required></label>
+        <label>Telefone<input type="tel" name="telefone" id="telefone" required></label>
+        <label>Mensagem<textarea name="mensagem" id="mensagem" rows="6" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar Mensagem</button>
+          <button type="reset" class="btn ghost">Limpar</button>
+        </div>
+      </form>
+      <aside class="support">
+        <h3>Suporte</h3>
+        <p>WhatsApp, Instagram e Email — prontos para atender.</p>
+        <div class="social-links">
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:suporte@kveg.com" target="_blank" rel="noopener">Email</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>KVEG</strong>
+        <p>© 2025 KVEG — Todos os direitos reservados</p>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:suporte@kveg.com" target="_blank">suporte@kveg.com</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

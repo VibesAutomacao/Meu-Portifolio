@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KVEG — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hotbar">
+    <div class="container hotbar-inner">
+      <a class="logo" href="index.html">KVEG</a>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="loja.html">Loja</a>
+        <a href="contato.html">Contato</a>
+        <a href="login.html" class="btn-login">Login</a>
+      </nav>
+      <div class="actions">
+        <button id="cartBtn5" class="cart-btn">🛒 <span id="cartCount5">0</span></button>
+        <button id="menuToggle5" class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="auth">
+      <h1>Entrar</h1>
+      <form id="loginForm" class="auth-form" novalidate>
+        <label>Email<input type="email" id="loginEmail" required></label>
+        <label>Senha<input type="password" id="loginPassword" minlength="6" required></label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Login</button>
+        </div>
+        <p class="note">Sistema pronto para futura integração com API — atualmente simulação local.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>KVEG</strong>
+        <p>© 2025 KVEG — Todos os direitos reservados</p>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:suporte@kveg.com" target="_blank" rel="noopener">suporte@kveg.com</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
